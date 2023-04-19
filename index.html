@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login/Register Form</title>
+</head>
+<body>
+  <div class="form-wrap">
+    <div class="btn-box">
+      <div id="btn"></div>
+      <button type="button" class="toggle-btn" onclick="login()">Login</button>
+      <button type="button" class="toggle-btn" onclick="register()">Register</button>
+    </div>
+    <form action="#" class="form-box" id="login">
+      <input type="text" class="input-box" placeholder="User Name" required><br>
+      <input type="password" class="input-box" placeholder="Enter Password" required><br>
+      <input type="checkbox" class="checkbox"><span>Remember Password</span><br>
+      <button type="submit">Login</button>
+    </form>
+    <form action="#" class="form-box" id="register">
+      <input type="text" class="input-box" placeholder="User Name" required><br>
+      <input type="email" class="input-box" placeholder="Enter Email Address" required><br>
+      <input type="password" class="input-box" placeholder="Enter Password" required><br>
+      <input type="checkbox" class="checkbox"><span>I agree to the terms & conditions</span><br>
+      <button type="submit">Register</button>
+    </form>
+    <div class="social-links">
+      <a href="#"><img src="./assets/facebook logo.jpg"></a>
+      <a href="#"><img src="./assets/google logo.jpg"></a>
+      <a href="#"><img src="./assets/Instagram logo.png"></a>
+    </div>
+  </div>
+
+  <script>
+    var x = document.getElementById('login');
+    var y = document.getElementById('register');
+    var z = document.getElementById('btn');
+
+    function register(){
+      x.style.left = ('-350px');
+      y.style.left = ('35px');
+      z.style.left = ('125px')
+    }
+    function login(){
+      x.style.left = ('35px');
+      y.style.left = ('400px');
+      z.style.left = ('0px')
+    }
+  </script>
+</body>
+</html>
